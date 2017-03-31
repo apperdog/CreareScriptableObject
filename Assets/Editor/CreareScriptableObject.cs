@@ -118,9 +118,10 @@ public class CreareScriptableObject : EditorWindow
                 // 建立 ScriptableObject
                 ScriptableObject d = ScriptableObject.CreateInstance(type);
 
-                // 建立dateSave至Resources夾，其檔案為date.asset
+                // 建立ScriptableObject，其檔案為data[0].asset
                 AssetDatabase.CreateAsset(d, @"Assets" + save + "/" + data[0] + ".asset");
 
+                // 更新 ScriptableObject資料
                 DataBase d2 = d as DataBase;
                 d2.SetData(data);
             }
