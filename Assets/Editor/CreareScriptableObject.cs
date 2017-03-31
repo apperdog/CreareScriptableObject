@@ -127,7 +127,7 @@ public class CreareScriptableObject : EditorWindow
 
             float p = (float)i / (float)rows;
 
-            EditorUtility.DisplayProgressBar("進度", "ScriptableObject輸出中 " + p * 100 +"%", p);
+            EditorUtility.DisplayProgressBar("進度", "ScriptableObject輸出中 " + (int)p * 100 +"%", p);
         }
 
         scriptableObject = null;
